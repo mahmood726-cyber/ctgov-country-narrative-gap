@@ -1,0 +1,96 @@
+{
+  "title": "CT.gov Country Narrative Gap",
+  "slug": "ctgov-country-narrative-gap",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-29",
+  "body": "Which country-linked CT.gov portfolios most often leave older closed study pages without both detailed descriptions and primary outcome descriptions? We analysed 249,507 eligible older closed interventional studies from the March 29, 2026 full-registry snapshot and exploded country links. We defined a narrative-gap study as one missing both detailed description and primary outcome description, then ranked country-linked portfolios with at least 500 linked studies by stock and rate. The United States led the narrative-gap stock table at 9,049 studies, followed by Germany at 2,438, France at 2,420, and Canada at 1,853. Japan had the sharpest large-country narrative-gap rate at 17.9 percent, ahead of Finland at 16.6 percent and Germany at 16.3 percent. Country-linked narrative gaps show where registry pages remain text-thin even when they retain dates, status fields, and other basic metadata on the public page for readers. Country-linked rows are non-exclusive because multinational studies can contribute to more than one national portfolio in the registry tables.",
+  "word_count": 156,
+  "sentence_count": 7,
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "Which country-linked CT.gov portfolios most often leave older closed study pages without both detailed descriptions and primary outcome descriptions?"
+    },
+    {
+      "role": "Dataset",
+      "text": "We analysed 249,507 eligible older closed interventional studies from the March 29, 2026 full-registry snapshot and exploded country links."
+    },
+    {
+      "role": "Method",
+      "text": "We defined a narrative-gap study as one missing both detailed description and primary outcome description, then ranked country-linked portfolios with at least 500 linked studies by stock and rate."
+    },
+    {
+      "role": "Primary result",
+      "text": "The United States led the narrative-gap stock table at 9,049 studies, followed by Germany at 2,438, France at 2,420, and Canada at 1,853."
+    },
+    {
+      "role": "Secondary result",
+      "text": "Japan had the sharpest large-country narrative-gap rate at 17.9 percent, ahead of Finland at 16.6 percent and Germany at 16.3 percent."
+    },
+    {
+      "role": "Interpretation",
+      "text": "Country-linked narrative gaps show where registry pages remain text-thin even when they retain dates, status fields, and other basic metadata on the public page for readers."
+    },
+    {
+      "role": "Boundary",
+      "text": "Country-linked rows are non-exclusive because multinational studies can contribute to more than one national portfolio in the registry tables."
+    }
+  ],
+  "notes": {
+    "app": "CT.gov Country Narrative Gap dashboard",
+    "data": "249,507 eligible older closed interventional studies with country-linked narrative-gap stock and rate summaries",
+    "code": "https://github.com/mahmood726-cyber/ctgov-country-narrative-gap",
+    "doi": "",
+    "version": "1.0.0",
+    "date": "2026-03-29",
+    "validation": "FULL REGISTRY RUN"
+  },
+  "type": "methods",
+  "primary_estimand": "Narrative-gap stock among older studies missing both detailed descriptions and primary outcome descriptions",
+  "validation": {
+    "status": "fail",
+    "checks": [
+      {
+        "name": "single paragraph",
+        "ok": true,
+        "detail": "Body must not contain blank-line paragraph breaks."
+      },
+      {
+        "name": "sentence count",
+        "ok": true,
+        "detail": "Found 7 sentences."
+      },
+      {
+        "name": "word count",
+        "ok": true,
+        "detail": "Found 156 words."
+      },
+      {
+        "name": "no headings",
+        "ok": true,
+        "detail": "No markdown headings allowed in body."
+      },
+      {
+        "name": "no links",
+        "ok": true,
+        "detail": "No links or DOI links allowed in body."
+      },
+      {
+        "name": "result sentence has interval",
+        "ok": true,
+        "detail": "Sentence 4 should include a quantitative result such as a percentage, count, or interval."
+      },
+      {
+        "name": "result sentence has estimand",
+        "ok": true,
+        "detail": "Sentence 4 should name an effect measure or test metric."
+      },
+      {
+        "name": "boundary sentence present",
+        "ok": false,
+        "detail": "Sentence 7 should express a limitation, harm, or scope boundary."
+      }
+    ]
+  },
+  "schema": "e156-v0.2"
+}
